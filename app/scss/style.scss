@@ -22,9 +22,10 @@
     @extend %roboto-400;
     line-height: 1.2;
     color: $title;
-    padding-bottom: 1px;
+    padding: 0px 2px 1px;
     transition: all 0.3s;
     &:hover {
+      @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
     }
