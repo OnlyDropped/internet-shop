@@ -9,4 +9,7 @@ $(function () {
   });
 
 
+  $(".video-fashion__play").fancybox();
+
+
 })
