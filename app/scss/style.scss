@@ -289,7 +289,7 @@
     height: 480px;
     display: flex;
   }
-  &__play{
+  &__play {
     margin: auto;
   }
   &__content {
@@ -316,6 +316,128 @@
     cursor: pointer;
   }
 }
+.product {
+  padding: 120px 0;
+  text-align: center;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px 30px;
+  }
+  &__link {
+    display: inline-block;
+    letter-spacing: 0.2em;
+    color: $title;
+    border: 1px solid $accent;
+    padding: 19px 29px;
+    margin-top: 59px;
+  }
+}
+.product-item {
+  max-width: 370px;
+  text-align: center;
+
+  &__img-box {
+    position: relative;
+    height: 370px;
+    overflow: hidden;
+    margin-bottom: 29px;
+  }
+  &__images {
+    object-fit: cover;
+  }
+  &__link-box {
+    transition: all 0.4s;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
+    border-radius: 25px;
+    width: 220px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(300%);
+  }
+  &__link--line {
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 30px;
+      background-color: #ececec;
+    }
+    &::before {
+      left: -28px;
+      cursor: auto;
+    }
+    &::after {
+      right: -28px;
+      cursor: auto;
+    }
+  }
+  &__link {
+    display: block;
+    path {
+      transition: all 0.3s;
+    }
+  }
+  &__link:hover {
+    path {
+      fill: $accent;
+    }
+  }
+  &:hover {
+    .product-item__link-box {
+      transform: translateY(0%);
+    }
+  }
+  &__title {
+    @extend %roboto-400;
+    font-size: 22px;
+    color: $title;
+    margin-top: 19px;
+    margin-bottom: 20px;
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+  }
+  &__new-price {
+    @extend %roboto-500;
+    color: $title;
+  }
+  &__old-price {
+    @extend %roboto-400;
+    text-decoration: line-through;
+    color: #ccccce;
+    margin-left: 20px;
+  }
+  &--sale {
+    .product-item__img-box::before {
+      content: "Sale";
+      @extend %btn;
+      padding: 9px 10px;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+    }
+  }
+}
+.star{
+  display: block;
+  margin: 0 auto;
+}
+
 .footer {
   background-color: $bg;
 }
