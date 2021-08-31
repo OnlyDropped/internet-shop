@@ -495,15 +495,101 @@
     padding: 19px 33px;
   }
 }
-.partners{
+.partners {
   padding: 120px 0;
-  &__list{
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-
+.blog {
+  padding-bottom: 164px;
+  background-image: url("../images/blog-bg.svg");
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //background-position: center center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  &__title {
+    margin-bottom: 29px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: url("../images/decor/blog-decor.svg");
+      position: absolute;
+      right: -24px;
+      top: -33px;
+      z-index: -1;
+    }
+  }
+  &__item {
+    max-width: 370px;
+    border: 1px solid #ececec;
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    padding-bottom: 30px;
+    &:hover {
+      box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.34);
+      .blog__item-link {
+        color: $accent;
+        &::after {
+          background-image: url("../images/icons/arrow-accent.svg");
+        }
+      }
+    }
+  }
+  &__item-imglink {
+    display: block;
+    margin-bottom: 34px;
+    img {
+      object-fit: cover;
+      height: 288px;
+    }
+  }
+  &__item-box {
+    padding: 30px 40px;
+  }
+  &__item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  &__item-author,
+  &__item-data {
+    display: flex;
+    align-items: center;
+    @extend %quicksand-500;
+    color: $default;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__item-title {
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $title;
+    margin-bottom: 25px;
+  }
+  &__item-link {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  &__item-link::after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/arrow.svg");
+    width: 10px;
+    height: 8px;
+    top: 5px;
+    right: -14px;
+  }
+}
 .footer {
   background-color: $bg;
 }
