@@ -41,3 +41,47 @@ a {
   color: #8d8d8d;
   text-align: center;
 }
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 25px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/home-icon.svg");
+    left: -1px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    @extend %quicksand-500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #727272;
+    padding-right: 40px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../images/icons/angle-right.svg");
+      width: 11px;
+      height: 12px;
+      right: 10px;
+      top: 7px;
+    }
+    &:last-child {
+      color: $accent;
+      &::after{
+        content: none;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
