@@ -659,6 +659,10 @@
     font-weight: 500;
     color: $accent;
   }
+  &__text {
+    @extend %quicksand-500;
+    margin-bottom: 25px;
+  }
 }
 .footer {
   background-color: $bg;
