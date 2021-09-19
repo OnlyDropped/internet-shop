@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 13" width="9" height="13">
+	<title>angle_right</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #8d8d8d } 
+	</style>
+	<path id="angle_right" class="shp0" d="M7 6.18C7 6 6.94 5.82 6.83 5.68L3.06 1.39C2.82 1.11 2.43 1.11 2.19 1.39C1.95 1.66 1.95 2.1 2.19 2.38L5.52 6.18L2.19 9.98C1.95 10.25 1.95 10.7 2.19 10.97C2.43 11.24 2.82 11.24 3.06 10.97L6.83 6.67C6.95 6.54 7 6.36 7 6.18L7 6.18ZM7 6.18" />
+</svg>

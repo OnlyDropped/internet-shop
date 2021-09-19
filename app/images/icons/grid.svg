@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>grid</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #fe3e57 } 
+	</style>
+	<path id="grid" class="shp0" d="M2 5.75L5.75 5.75L5.75 2L2 2L2 5.75ZM7.62 17L11.37 17L11.37 13.25L7.62 13.25L7.62 17ZM2 17L5.75 17L5.75 13.25L2 13.25L2 17ZM2 11.37L5.75 11.37L5.75 7.62L2 7.62L2 11.37ZM7.62 11.37L11.37 11.37L11.37 7.62L7.62 7.62L7.62 11.37ZM13.25 2L13.25 5.75L17 5.75L17 2L13.25 2ZM7.62 5.75L11.37 5.75L11.37 2L7.62 2L7.62 5.75ZM13.25 11.37L17 11.37L17 7.62L13.25 7.62L13.25 11.37ZM13.25 17L17 17L17 13.25L13.25 13.25L13.25 17Z" />
+</svg>
