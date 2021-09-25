@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 23" width="16" height="23">
+	<title>Location icon</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #fe3e57 } 
+	</style>
+	<path id="Location icon" class="shp0" d="M8 1C4.14 1 1 4.25 1 8.24C1 13.2 7.26 20.47 7.53 20.77C7.78 21.06 8.22 21.06 8.47 20.77C8.73 20.47 14.99 13.2 14.99 8.24C14.99 4.25 11.86 1 8 1ZM8 11.88C6.06 11.88 4.48 10.25 4.48 8.24C4.48 6.23 6.06 4.6 8 4.6C9.94 4.6 11.52 6.23 11.52 8.24C11.52 10.25 9.94 11.88 8 11.88Z" />
+</svg>
