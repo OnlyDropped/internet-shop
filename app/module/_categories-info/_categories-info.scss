@@ -1,0 +1,12 @@
+.categories-info {
+  padding: 120px 0;
+  background-image: url("../images/decor/categories-left.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  &__inner {
+    background-image: url("../images/decor/categories-right.svg");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    background-position: center right;
+  }
+}

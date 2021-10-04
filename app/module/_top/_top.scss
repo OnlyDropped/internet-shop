@@ -1,0 +1,19 @@
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background-image: url("../");
+    padding: 120px 0 130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+  }
+  &__title {
+    @extend %roboto-400;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #15181d;
+    margin-bottom: 30px;
+  }
+}
